@@ -1,0 +1,23 @@
+[
+    {
+        "slug": "projet-1",
+        "title": "Projet 1 - Portfolio",
+        "description": "Un projet personnel pour présenter mon travail.",
+        "image": "/images/projet1.jpg",
+        "content": "Voici le détail complet du projet 1."
+    },
+    {
+        "slug": "projet-2",
+        "title": "Projet 2 - Application React",
+        "description": "Développement d'une application React avec une API Laravel.",
+        "image": "/images/projet2.jpg",
+        "content": "Détails techniques et fonctionnels du projet 2."
+    },
+    {
+        "slug": "projet-3",
+        "title": "Projet 3 - Landing Page",
+        "description": "Création d'une landing page avec Tailwind CSS.",
+        "image": "/images/projet3.jpg",
+        "content": "Design responsive et animations CSS modernes."
+    }
+]

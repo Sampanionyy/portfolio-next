@@ -5,10 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
 
-interface Props {
-    params: {
-        slug: string
-    }
+type PageProps = {
+    params: Promise<any> | any
 }
 
 export async function generateStaticParams() {
@@ -17,8 +15,10 @@ export async function generateStaticParams() {
     }))
 }
 
-export default function PostPage({ params }: Props) {
-    const post = postsData.find((p) => p.slug === params.slug)
+export default async function PostPage({ params }: PageProps) {
+    const resolvedParams = await params
+
+    const post = postsData.find((p) => p.slug === resolvedParams.slug)
 
     if (!post) {
         notFound()
